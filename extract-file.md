@@ -1,5 +1,4 @@
-'''bash
-extract-file () {
+'''shell
 if [ -f $1 ] ; then
 case $1 in
 *.tar.bz2) tar xjvf $1 ;;
@@ -18,5 +17,4 @@ esac
 else
 echo "'$1' is not a valid file"
 fi
-}
 '''
