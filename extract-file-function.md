@@ -13,6 +13,7 @@ case $1 in
 *.zip) unzip $1 ;;
 *.Z) uncompress $1 ;;
 *.7z) 7z x $1 ;;
+*.tar.xz) tar xvfJ $1 ;;
 *) echo "'$1' cannot be extracted via extract-file" ;;
 esac
 else
